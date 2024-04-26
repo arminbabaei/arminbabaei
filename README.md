@@ -1,16 +1,32 @@
-### Hi there 👋
+ > <h1 align='center'>
+  > Hi there 👋 I'm Armin 👨‍💻
+</h1>
 
-<!--
-**arminbabaei/arminbabaei** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+  ``` js
+  async function getJob() {
+  try {
+    const developer = get({
+      nickName: 'armin',
+      birthday: '1991-01-01',
+      city: 'Tehran',
+      job: 'Front-End Developer',
+      level: 'Junior',
+      slills: {
+          all: 'HTML5, CSS3, JavaScript, TailwindCSS, ReactJS'
+      }
+    });
+    const response = await developer.response;
+    console.log('GET call succeeded: ', response);
+  } catch (e) {
+    console.log('GET call failed: ', JSON.parse(e.response.body));
+  }
+}
+  ```
+</p>
+<p align='center'>
+  <a href="#"><img src="https://github-readme-stats.vercel.app/api?username=arminbabaei&show_icons=true&count_private=true&theme=tokyonight" width="350"></a>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
